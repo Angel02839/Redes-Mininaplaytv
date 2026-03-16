@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mininaplaytv</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:Poppins;
+background:linear-gradient(135deg,#ff9ed1,#ffc6ea);
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+margin:0;
+}
+
+.container{
+width:380px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(12px);
+padding:30px;
+border-radius:25px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.profile{
+width:110px;
+height:110px;
+border-radius:50%;
+border:4px solid white;
+object-fit:cover;
+}
+
+h1{
+color:white;
+margin:10px 0;
+}
+
+.subtitle{
+color:white;
+font-size:14px;
+margin-bottom:20px;
+}
+
+.button{
+display:block;
+background:#ff7ec6;
+color:white;
+padding:12px;
+margin:8px 0;
+border-radius:14px;
+text-decoration:none;
+font-weight:500;
+cursor:pointer;
+transition:0.25s;
+}
+
+.button:hover{
+transform:scale(1.05);
+background:#ff5db6;
+}
+
+.panel{
+display:none;
+background:rgba(255,255,255,0.6);
+margin-top:15px;
+padding:15px;
+border-radius:15px;
+font-size:13px;
+text-align:left;
+}
+
+.progress{
+background:white;
+border-radius:20px;
+height:18px;
+overflow:hidden;
+margin-top:8px;
+}
+
+.progress-bar{
+background:#ff6ec0;
+height:100%;
+width:99%;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<img class="profile" src="https://i.imgur.com/0y0y0y0.png">
+
+<h1>Mininaplaytv</h1>
+
+<p class="subtitle">
+Hi My name is Mininaplaytv o Mina la chica de los gatos 🐱 <br>
+📍 México MTY
+</p>
+
+<a class="button" href="#">Instagram</a>
+<a class="button" href="#">YouTube</a>
+<a class="button" href="#">TikTok</a>
+
+<div class="button" onclick="togglePanel('meta')">Meta de seguidores</div>
+
+<div id="meta" class="panel">
+
+<b>Meta de mininaplaytv</b><br>
+¡Faltan 5 seguidores más!
+
+<div class="progress">
+<div class="progress-bar"></div>
+</div>
+
+605 / 610 seguidores
+
+</div>
+
+<div class="button" onclick="togglePanel('sobre')">Sobre mi</div>
+
+<div id="sobre" class="panel">
+
+Mi Nombre es Jennifer Tamez  
+Cumplo años el 17 de Septiembre  
+
+Soy una persona muy alegre con buen humor de Monterrey NL.
+
+Actualmente soy capitana de un equipo de volleyball.
+
+Me gustan los felinos especialmente gatos y zorros.
+
+Prefiero dulces picantes y a veces hago cosplay.
+
+</div>
+
+<div class="button" onclick="togglePanel('wishlist')">Wishlist</div>
+
+<div id="wishlist" class="panel">
+
+Si gustas apoyarme esta es mi Wishlist de Amazon 💗
+
+</div>
+
+<div class="button" onclick="togglePanel('reglas')">Reglas del stream</div>
+
+<div id="reglas" class="panel">
+
+No ofender a nadie en el chat  
+No hacer spam  
+No decir groserías u obscenidades  
+Evitar política o religión  
+No pedir Mod o VIP  
+Respetar a los moderadores  
+No pasar links  
+
+Después de 3 advertencias será suspensión o ban.
+
+</div>
+
+<div class="button" onclick="togglePanel('stream')">Acerca del stream</div>
+
+<div id="stream" class="panel">
+
+Jugamos:
+
+Fortnite  
+Apex Legends  
+Roblox  
+Overwatch  
+Just Chatting  
+
+ID Fortnite: SheilaMoon3037  
+ID Epic: Sheila Katsura  
+ID Roblox: Katsurajimoon  
+ID Apex Legends: SheilaMoon3037
+
+</div>
+
+</div>
+
+<script>
+
+function togglePanel(id){
+
+let panel = document.getElementById(id);
+
+if(panel.style.display === "block"){
+panel.style.display = "none";
+}else{
+panel.style.display = "block";
+}
+
+}
+
+</script>
+
+</body>
+</html>
